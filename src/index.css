@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  display: flex;
+  background-color: hsl(0, 100%, 74%);
+  height: 100svh;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width:768px) {
+  body{
+    background-image: url("/images/bg-intro-desktop.png");
+  }
+}
+
+@media screen and (max-width:768px) {
+  body{
+    background-image: url("/images/bg-intro-mobile.png");
+  }
+}
